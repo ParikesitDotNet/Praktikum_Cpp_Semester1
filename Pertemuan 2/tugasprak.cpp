@@ -1,8 +1,4 @@
-#include <iostream>
-#include <iomanip>
-#include <string>
-
-using namespace std;
+#include "header.h"
 
 // Deklarasi Variabel
 string fullName;
