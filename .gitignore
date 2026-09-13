@@ -1,0 +1,5 @@
+# IDE dependent folder
+*.vscode/
+
+#.exe file compilation result
+*.exe
