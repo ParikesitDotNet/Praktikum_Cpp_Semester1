@@ -25,4 +25,5 @@ int main()
 
         cout << "Faktorial dari " << angka << " adalah: " << faktorial << endl;
     }
+    return 0;
 }

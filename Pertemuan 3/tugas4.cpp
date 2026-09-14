@@ -3,9 +3,11 @@ int main()
 {
     float listrik, tagihan, diskon = 0, hargaAkhir;
 
+    // Input variabel "listrik"
     cout << "Masukkan penggunaan listrik dalam sebulan (kWh): ";
     cin >> listrik;
 
+    // Kalkulasi tagihan
     if (listrik <= 100)
     {
         tagihan = listrik * 1500;

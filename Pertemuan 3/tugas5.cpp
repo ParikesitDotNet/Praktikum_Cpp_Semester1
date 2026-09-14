@@ -3,10 +3,15 @@
 
 int main()
 {
+    // Deklarasi Variabel
     int jumlah;
     float nilai, total = 0, ratarata;
+
+    // Input variabel "Jumlah"
     cout << "masukkan nilai yang ingin dimasukkan (minimal 3) : ";
     cin >> jumlah;
+
+    // Input dan validasi mapel
     while (jumlah < 3)
     {
         cout << "Jumlah mata pelajaran minimal 3. Masukkan lagi : ";
@@ -18,10 +23,16 @@ int main()
         cin >> nilai;
         total += nilai;
     }
+
+    // Kalkulasi rata-rata
     ratarata = total / jumlah;
+
+    // Output Rata-rata
     cout << fixed << setprecision(2);
     cout << "___________________Hasil___________________" << endl;
     cout << "|" << setw(21) << "rata-rata = " << ratarata << setw(17) << "|" << endl;
+
+    // Output tingkat prestasi
     if (ratarata > 85)
     {
         cout << left << "Kategori Prestasi = Sangat Baik" << endl;
