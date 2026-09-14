@@ -10,7 +10,7 @@ int main()
     cout << "" << endl;
 
     // Input Panjang
-    cout << setw(30) << "Masukkan Panjang dinding (m)" << ": ";
+    cout << setw(30) << "Masukkan Panjang dinding (m)" << ":";
     cin >> panjang;
 
     // Input Lebar
