@@ -3,23 +3,16 @@
 
 int main()
 {
-
-    // Susunan Data //
+    // Deklarasi Variabel
     string nama;
-    int umur;
-    int kelamin;
-    float tinggi;
-    float berat;
+    int umur, kelamin;
+    float tinggi, berat;
     int intensitas;
 
-    // Susunan Data Perhitungan //
-
-    float hasil = 0;
-    float bmr = 0;
-    float bmi = 0;
-    float t2 = 0;
+    float hasil = 0, bmr = 0, bmi = 0, t2 = 0;
     string imt;
 
+    // Input data nama,umur,tinggi,berat
     cout << setw(30) << "========Penghitung Kalori Harian========" << endl;
     cout << left << setw(30) << "Masukkan Nama " << ": ";
     getline(cin, nama);
@@ -31,8 +24,7 @@ int main()
     cout << left << setw(30) << "Masukkan Berat Badan " << ": ";
     cin >> berat;
 
-    // Input Jenis Kelamin //
-
+    // Input Jenis Kelamin
     do
     {
         cout << left << setw(30) << "Masukkan Jenis Kelamin" << ": " << endl;
@@ -53,8 +45,7 @@ int main()
         }
     } while (kelamin != 1 && kelamin != 2);
 
-    // Input Intensitas //
-
+    // Input Intensitas
     do
     {
         cout << left << setw(30) << "Masukkan Tingkat Intensitas Aktivitas Fisik" << ": " << endl;
@@ -65,31 +56,29 @@ int main()
         cout << "5. SangatBerat" << endl;
         cin >> intensitas;
 
-        if (intensitas == 1)
+        switch (intensitas)
         {
+        case 1:
             hasil = bmr * 1.2;
-        }
-        else if (intensitas == 2)
-        {
+            break;
+        case 2:
             hasil = bmr * 1.375;
-        }
-        else if (intensitas == 3)
-        {
+            break;
+        case 3:
             hasil = bmr * 1.55;
-        }
-        else if (intensitas == 4)
-        {
+            break;
+        case 4:
             hasil = bmr * 1.725;
-        }
-        else if (intensitas == 5)
-        {
+            break;
+        case 5:
             hasil = bmr * 1.9;
-        }
-        else
-        {
+            break;
+        default:
             cout << left << setw(30) << "Tolong Masukkan Sesuai Pilihan!" << endl;
+            break;
         }
-    } while (intensitas != 1 && intensitas != 2 && intensitas != 3 && intensitas != 4 && intensitas != 5);
+
+    } while (intensitas < 1 || intensitas > 5);
 
     t2 = tinggi / 100;
 

@@ -12,6 +12,8 @@ Proyek bersama penugasan kompilasi program C++ kelompok 1 offering TI-C dan hasi
 
 ## 💻 Software dan Compiler
 
+Praktikum ini menggunakan Code Editor "Visual Studio Code" dengan Compiler "MSYS2 Compiler".
+
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [MSYS2 Compiler](https://www.msys2.org/)
 

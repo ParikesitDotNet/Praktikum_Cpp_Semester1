@@ -2,6 +2,7 @@
 
 int main()
 {
+    // Deklarasi variabel
     int panjang, lebar, tinggi;
 
     // Input Panjang
@@ -19,10 +20,11 @@ int main()
     cout << setw(28) << "Masukkan Tinggi Balok" << ": ";
     cin >> tinggi;
 
-    cout << "===================================" << endl;
     // Hitung Volume
+    cout << "===================================" << endl;
     cout << left;
     cout << setw(28) << "Hasil Volume Balok" << ": " << panjang * lebar * tinggi << "cm\n";
+
     // Hitung Luas Permukaan
     cout << left;
     cout << setw(28) << "Hasil Luas Permukaan Balok" << ": "

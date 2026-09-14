@@ -2,10 +2,11 @@
 
 int main()
 {
-    // Biodata dan Gaji
+    // Deklarasi Variabel
     string nama;
     float jamKerja, tarif, totalGaji;
 
+    // Input data nama, jam kerja, dan tarif per jam user
     cout << left;
     cout << "=======================================\n";
     cout << setw(27) << "Masukkan Nama" << ": ";
@@ -15,6 +16,7 @@ int main()
     cout << setw(27) << "Tarif per Jam(Rp)" << ": ";
     cin >> tarif;
 
+    // Kalkulasi Total gaji
     totalGaji = jamKerja * tarif;
 
     // Output

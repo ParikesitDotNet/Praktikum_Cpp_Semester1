@@ -2,27 +2,31 @@
 
 int main()
 {
+    // Deklarasi Vairabel
     string nama, usia, nim, email, offering;
     float tinggiBadan;
     double nilaiIpk;
     bool isLulus;
 
+    // Input data nama dan usia user
     cout << setw(35) << "==Input Data==" << endl;
     cout << "Masukkan Nama = ";
     getline(cin, nama);
     cout << "Masukkan Usia = ";
     cin >> usia;
 
+    // Input dan Validasi NIM
     do
     {
         cout << "Masukkan NIM = ";
         cin >> nim;
         if (nim.length() != 12)
         {
-            cout << "NIM SALAH!" << endl;
+            cout << "NIM Tidak Valid!" << endl;
         }
     } while (nim.length() != 12);
 
+    // Input data Kelas Offering, Email, Tinggi Badan, dan Nilai IPK
     cout << "Masukkan Offering = ";
     cin >> offering;
     cout << "Masukkan Email = ";
@@ -33,6 +37,7 @@ int main()
     cin >> nilaiIpk;
     isLulus = (nilaiIpk >= 3.0);
 
+    // Output semua data yang telah dimasukkan oleh user
     cout << endl;
     cout << "|" << setw(34) << "==Kelulusan==" << endl;
     cout << left;
