@@ -10,9 +10,12 @@ float giveDiscount(float persen, float harga)
 int main()
 {
     int pilihanUser;
-    bool isTambahBelanjaan = true;
+    bool isUlangi = true;
 
-    while (isTambahBelanjaan)
+    cout << "Silahkan masukkan belanjaan anda! \n";
+    cout << endl;
+
+    while (isUlangi)
     {
         int jumlahBarang = 0;
         float totalHarga = 0;
@@ -44,12 +47,14 @@ int main()
         else
             outputHarga = totalHarga;
 
+        // Output
         cout << endl;
         cout << setw(25) << "Total Harga" << ": Rp " << totalHarga << endl;
         cout << setw(25) << "Diskon" << ": Rp " << totalHarga - outputHarga << endl;
         cout << setw(25) << "Total Setelah Diskon" << ": Rp " << outputHarga << endl;
         cout << endl;
 
+        // Konfirmasi action user
         do
         {
             cout << "Ingin menambahkan belanjaan lagi? (1 untuk ya, 2 untuk tidak): ";
@@ -57,12 +62,12 @@ int main()
 
             if (pilihanUser == 1)
             {
-                isTambahBelanjaan = true;
+                isUlangi = true;
                 cout << "Silahkan masukkan kembali harga belanjaan anda!\n";
             }
             else if (pilihanUser == 2)
             {
-                isTambahBelanjaan = false;
+                isUlangi = false;
                 cout << "Terimakasih telah menggunakan program ini!\n";
             }
             else
