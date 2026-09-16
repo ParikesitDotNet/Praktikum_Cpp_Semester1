@@ -1,12 +1,5 @@
 #include "../global/header.h"
 
-// Function Diskon
-float giveDiscount(float persen, float harga)
-{
-    float theDiscountedHarga = harga - (harga * (persen / 100.0));
-    return theDiscountedHarga;
-}
-
 int main()
 {
     int pilihanUser;
@@ -39,10 +32,10 @@ int main()
 
         // Desicion output harga
         if (totalHarga > 500000)
-            outputHarga = giveDiscount(10, totalHarga);
+            outputHarga = Discounts::giveDiscount(10, totalHarga);
 
         else if (totalHarga >= 250000 && totalHarga <= 500000)
-            outputHarga = giveDiscount(5, totalHarga);
+            outputHarga = Discounts::giveDiscount(5, totalHarga);
 
         else
             outputHarga = totalHarga;
