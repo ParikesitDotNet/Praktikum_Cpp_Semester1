@@ -41,7 +41,7 @@ int main()
             outputHarga = totalHarga;
 
         // Output
-        cout << endl;
+        cout << fixed << setprecision(2) << endl;
         cout << setw(25) << "Total Harga" << ": Rp " << totalHarga << endl;
         cout << setw(25) << "Diskon" << ": Rp " << totalHarga - outputHarga << endl;
         cout << setw(25) << "Total Setelah Diskon" << ": Rp " << outputHarga << endl;
