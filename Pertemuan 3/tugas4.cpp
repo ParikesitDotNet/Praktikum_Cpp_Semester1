@@ -1,4 +1,4 @@
-#include "header.h"
+#include "../global/header.h"
 int main()
 {
     float listrik, tagihan, diskon = 0, hargaAkhir;

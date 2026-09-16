@@ -1,4 +1,4 @@
-#include "header.h"
+#include "../global/header.h"
 
 // Function Diskon
 float giveDiscount(float persen, float harga)
