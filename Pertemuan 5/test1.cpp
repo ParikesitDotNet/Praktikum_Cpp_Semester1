@@ -1,6 +1,6 @@
 #include "../global/header.h"
 
-void calculateSquare(int number)
+void calculateSquare(int &number)
 {
     number *= number;
 }
@@ -8,7 +8,8 @@ void calculateSquare(int number)
 int main()
 {
     int num = 5;
+    cout << "Kuadrat dari " << num;
     calculateSquare(num);
-    cout << "Kuadrat dari " << num << " adalah " << num << endl;
+    cout << " adalah " << num << endl;
     return 0;
 }
