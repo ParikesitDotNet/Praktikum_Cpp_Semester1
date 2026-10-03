@@ -1,5 +1,4 @@
 #include "../global/header.h"
-#include <cmath>
 
 int angkaArr[5];
 const int angkaTerima = 5;

@@ -1,6 +1,4 @@
 #include "../global/header.h"
-#include <cmath>
-#include <vector>
 
 int main()
 {

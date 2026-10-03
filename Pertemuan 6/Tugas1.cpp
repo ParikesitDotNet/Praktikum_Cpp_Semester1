@@ -1,5 +1,4 @@
 #include "../global/header.h"
-#include <cctype>
 
 int main()
 {
