@@ -20,9 +20,17 @@ namespace Discounts
 
 namespace Statistika
 {
-    float average(float angkaTotal, int jumlahAngka)
+    float average(float angkaArr[], int angkaArrSize)
     {
-        return angkaTotal / jumlahAngka;
+        if (angkaArrSize <= 1)
+            return 0.0f;
+
+        float sum = 0;
+        for (int i = 0; i < angkaArrSize; i++)
+        {
+            sum += angkaArr[i];
+        }
+        return sum / angkaArrSize;
     }
 
     float standarDeviasi(float average, float angkaArr[], int angkaArrSize)
