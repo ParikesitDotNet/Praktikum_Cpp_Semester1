@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <string>
 #include <cstring>
+#include <vector>
 
 using namespace std;
 
