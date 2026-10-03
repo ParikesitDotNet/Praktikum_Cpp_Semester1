@@ -3,6 +3,8 @@
 #include <string>
 #include <cstring>
 #include <vector>
+#include <iterator>
+#include <cctype>
 
 using namespace std;
 
