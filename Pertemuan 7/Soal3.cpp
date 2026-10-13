@@ -17,5 +17,5 @@ int countEven(const vector<int> numArr)
 int main()
 {
     vector<int> lists = {1, 2, 4, 7, 8, 10};
-    cout << countEven(lists);
+    cout << "Angka genap pada Array adalah: " << countEven(lists);
 }

@@ -17,5 +17,5 @@ int countPositive(const vector<int> numArr)
 int main()
 {
     vector<int> lists = {-3, 5, -1, 7, 2, -8};
-    cout << countPositive(lists);
+    cout << "Angka positif pada array sebanyak:" << countPositive(lists);
 }
