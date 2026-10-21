@@ -2,12 +2,6 @@
 
 int hitungJumlah(vector<int> arrList)
 {
-    // int total = 0;
-    // for (int i = 0; i < size(arrList); i++)
-    // {
-    //     total += arrList[i];
-    // }
-
     return accumulate(arrList.begin(), arrList.end(), 0);
 }
 
