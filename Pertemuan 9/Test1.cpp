@@ -13,7 +13,7 @@ void main()
     cout << left << endl;
 
     cout << setw(30) << "Umur aslimu" << ": " << userAge << endl;
-    cout << setw(30) << "Umur aslimu melalui pointer" << ": " << *pUmur << endl;
-    cout << setw(30) << "Alamat Umurmu melalui pUmur" << ": " << pUmur << endl;
-    // cout << setw(30) << "Umurmu melalui pUmur" << ": " << *pUmur << endl;
+    cout << setw(30) << "Umur aslimu via pointer" << ": " << *pUmur << endl;
+    cout << setw(30) << "Alamat Umurmu via pUmur" << ": " << pUmur << endl;
+    // cout << setw(30) << "Umurmu via pUmur" << ": " << *pUmur << endl;
 }
