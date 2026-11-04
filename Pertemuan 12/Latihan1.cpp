@@ -2,23 +2,23 @@
 
 int main()
 {
+    struct TanggalBuah
+    {
+        unsigned int hari;
+        unsigned int bulan;
+        unsigned int tahun;
+    };
+
     struct DataBuah
     {
         string nama;
         string warna;
         double berat;
-    };
-
-    struct DateBuah
-    {
-        string hari;
-        int bulan;
-        int tahun;
+        TanggalBuah panenDate;
     };
 
     // Deklarasi Vector dan Input number step
-    vector<DataBuah> listBuah;
-    vector<DateBuah> listTanggal;
+    vector<DataBuah> buahVector;
     int inputStep = 1;
 
     cout << left;
@@ -27,29 +27,33 @@ int main()
     while (true)
     {
         DataBuah data;
-        DateBuah tanggal;
 
         cout << "Buah ke-" << inputStep << endl;
 
-        // Input parameter ke data (DataBuah Struct)
+        // Input nama
         cout << setw(25) << "Masukkan nama buah" << ": ";
-        cin >> data.nama;
+        getline(cin, data.nama);
+
+        // Input Warna
         cout << setw(25) << "Masukkan warna buah" << ": ";
-        cin >> data.warna;
+        getline(cin, data.warna);
+
+        // Input berat (kg)
         cout << setw(25) << "Masukkan berat buah(kg)" << ": ";
         cin >> data.berat;
 
-        // Input parameter ke tanggal (DateBuah Struct)
+        // Input parameter ke tanggal
         cout << setw(25) << "Masukkan tanggal panen" << ": ";
-        cin >> tanggal.hari;
+        cin >> data.panenDate.hari;
+
         cout << setw(25) << "Masukkan bulan panen" << ": ";
-        cin >> tanggal.bulan;
+        cin >> data.panenDate.bulan;
+
         cout << setw(25) << "Masukkan tahun panen" << ": ";
-        cin >> tanggal.tahun;
+        cin >> data.panenDate.tahun;
 
         // Push back ke array masing-masing
-        listBuah.push_back(data);
-        listTanggal.push_back(tanggal);
+        buahVector.push_back(data);
 
         // Cek submission untuk ulang
         char userDecision;
@@ -66,29 +70,26 @@ int main()
         cout << endl;
     }
 
-    if (listBuah.size() == 0 || listTanggal.size() == 0)
+    if (buahVector.size() == 0)
     {
         cout << "Tidak ada buah yang dimasukkan!";
         return 0;
     }
 
-    if (listBuah.size() != listTanggal.size())
+    cout << endl;
+    for (int i = 0; i < buahVector.size(); i++)
     {
-        cerr << "ERROR! Jumlah data pada listBuah tidak sama dengan listTanggal";
-        return 0;
-    }
+        DataBuah buah = buahVector[i];
 
-    for (int i = 0; i < listBuah.size(); i++)
-    {
-        auto buah = listBuah[i];
-        auto date = listTanggal[i];
-
-        cout << "Buah ke-" << i + 1 << endl;
+        cout << "Data Buah " << i + 1 << endl;
         cout << setw(20) << "Nama buah" << ": " << buah.nama << endl
              << setw(20) << "Warna buah" << ": " << buah.warna << endl
              << setw(20) << "Berat buah" << ": " << buah.berat << " kg" << endl;
 
-        cout << "Tanggal Panen: " << date.hari << "-" << date.bulan << "-" << date.tahun << endl;
+        cout << setw(20) << "Tanggal Panen" << ": "
+             << buah.panenDate.hari
+             << "-" << buah.panenDate.bulan
+             << "-" << buah.panenDate.tahun << endl;
         cout << endl;
     }
 
