@@ -17,3 +17,7 @@ int main()
 
     cout << endl;
 }
+
+/*
+Program ini mngakses array arr[6] menggunkanan modulo yang mengecek apakah nilai sisa setiap array habis, jika habis maka angka itu benar genap.
+*/
