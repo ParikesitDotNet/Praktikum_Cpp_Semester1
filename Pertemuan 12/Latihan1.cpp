@@ -1,22 +1,22 @@
 #include "../global/header.h"
 
+struct TanggalBuah
+{
+    unsigned int hari;
+    unsigned int bulan;
+    unsigned int tahun;
+};
+
+struct DataBuah
+{
+    string nama;
+    string warna;
+    double berat;
+    TanggalBuah panenDate;
+};
+
 int main()
 {
-    struct TanggalBuah
-    {
-        unsigned int hari;
-        unsigned int bulan;
-        unsigned int tahun;
-    };
-
-    struct DataBuah
-    {
-        string nama;
-        string warna;
-        double berat;
-        TanggalBuah panenDate;
-    };
-
     // Deklarasi Vector dan Input number step
     vector<DataBuah> buahVector;
     int inputStep = 1;
