@@ -67,6 +67,7 @@ int main()
         }
 
         inputStep++;
+        cin.ignore();
         cout << endl;
     }
 
