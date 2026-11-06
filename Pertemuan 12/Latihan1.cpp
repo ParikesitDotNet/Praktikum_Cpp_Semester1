@@ -61,7 +61,7 @@ int main()
              << "Ingin memasukkan data buah lagi?(Y/n): ";
         cin >> userDecision;
 
-        if (static_cast<char>(std::tolower(userDecision)) == 'n')
+        if (static_cast<char>(tolower(userDecision)) == 'n')
         {
             break;
         }

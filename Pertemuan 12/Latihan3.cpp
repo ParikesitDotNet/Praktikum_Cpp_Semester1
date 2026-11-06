@@ -27,7 +27,7 @@ int main()
         break;
 
     case SangatMatang:
-        messageOutput = "Makanan telalu matang";
+        messageOutput = "Makanan terlalu matang";
         break;
 
     default:

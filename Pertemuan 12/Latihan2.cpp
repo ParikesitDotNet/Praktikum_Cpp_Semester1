@@ -11,6 +11,7 @@ int main()
 {
     dataBuah.kodeAngka = 1;
     dataBuah.kodeHuruf = 'A';
-    cout << "Kode buah: " << dataBuah.kodeAngka;
+    cout << "Kode buah: " << dataBuah.kodeAngka << endl;
+    cout << "Kode huruf: " << dataBuah.kodeHuruf;
     return 0;
 }
